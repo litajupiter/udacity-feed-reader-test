@@ -26,7 +26,6 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
@@ -37,7 +36,6 @@ $(function() {
              expect(allFeeds[i].url.length).not.toBe(0);
            }
          });
-
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
@@ -51,9 +49,7 @@ $(function() {
          });
     });
 
-
     /* TODO: Write a new test suite named "The menu" */
-
     describe('The Menu', function() {
 
         /* TODO: Write a test that ensures the menu element is
@@ -61,12 +57,15 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
-
+         it('menu is hidden', function() {
+           expect($('body').hasClass('menu-hidden')).toBe(true);
+         });
          /* TODO: Write a test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
+          
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */
